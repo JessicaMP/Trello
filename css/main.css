@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue",Arial,Helvetica,sans-serif;
+}
+/* Header */
+header ul {
+  list-style: none;
+  background: #07a;
+  height: 40px;
+}
+/* Tableros */
+header li {
+  display: inline-block;
+  border-radius: 3px;
+  font-weight: bold;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.li-one {
+  width: 100px;
+  margin-left: 10px;
+  box-sizing: border-box;
+  height: 30px;
+}
+
+.li-one, .li-two, .li-fourth, .li-five, .li-six {
+  background-color: rgba(255,255,255,.3);
+  color: rgba(255,255,255,.5);
+  transform: translateY(-10%);
+}
+
+.li-one p {
+  width: auto;
+  display: inline-block;
+  color: white;
+  /*font: 14px "Helvetica Neue",Arial,Helvetica,sans-serif;*/
+  text-shadow: 1px 0px white;
+  transform: translateY(-10%);
+  font-size: 14px;
+}
+
+.li-two img{
+  width: 25px;
+  border: none;
+}
+
+.fa {
+  font-size: 18px;
+  color: white;
+  padding: 7px;
+}
+
+.fa-search {
+  -webkit-transform: scaleX(-1);
+}
+
+/*imput*/
+.li-two {
+  width: 180px;
+  height: 30px;
+}
+
+.li-two input {
+  width: 140px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+.li-3 {
+  width: 900px;
+  display: inline-block;
+  text-align: center;
+  transform: translateY(10%);
+}
+
+.li-3 img {
+  display: inline-block;
+  color: #80b4d3;
+}
+
+.li-fourth, .li-five, .li-six, .li-seven {
+  width: 30px;
+  margin-right: 3px;
+}
+
+.fa-info {
+  transform: translateX(25%);
+}
+
+.li-seven img {
+  width:30px;
+  border-radius: 50%;
+  transform: translateY(20%);
+}
+section {
+  background-color: rgb(0,128,255);
+  min-height:100%;
+  position:absolute;
+}
+
+/* Sub menu*/
+.sub-menu ul {
+  list-style: none;
+  padding: 8px 4px 8px 8px;
+}
+
+.sub-menu li {
+  display: inline-block;
+}
+
+.sub-li1 {
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.fa-star-o {
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.sub-li2 {
+  width: 100px;
+}
+
+.sub-li2 p {
+  color: white;
+  display: inline-block;
+}
+
+.sub-li2 img {
+  transform: translateY(30%);
+}
+
+.sub-li3 {
+  padding-left: 794.5px;
+  margin-right: 16px;
+  box-sizing: border-box;
+}
+
+.sub-li3 p {
+  color: white;
+  display: inline-block;
+}
+
+.sub-li3 :first-child {
+  transform: translateY(-30%);
+  margin-right: 10px;
+}
+
+.sub-li3 :last-child {
+  text-decoration: underline;
+}
+
+.sub-menu p {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+/* Imput de lista*/
+.list {
+  display: inline-block;
+  margin-left: 10px;
+  width: 262px;
+  height: 32px;
+  padding: 4px;
+  background: #07a;
+  border-radius: 5px;
+}
+
+.list input {
+  background: none;
+  border: none;
+  outline: none;
+  width: 250px;
+  height: 30px;
+  padding-left: 10px;
+  font-size: 14px;
+}
+
+.list input::placeholder {
+  color: white;
+}
