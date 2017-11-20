@@ -15,11 +15,11 @@ close.addEventListener('click', function(event) {
   display.classList.remove('show');
   containerList.style.transform = 'translateY(-80%)';
 });
-
+//Despliegue el area de añadir tarea y guarda el nombre de la tarea que se ingreso
 var text = document.getElementById('text');
-var btn = document.getElementById('btn');
-btn.addEventListener('click', function(event) {
-  var displayTwo = document.getElementsByClassName('display-two')[0];
+var button = document.getElementById('button');
+var displayTwo = document.getElementsByClassName('display-two')[0];
+button.addEventListener('click', function(event) {
   containerList.classList.add('hide');
   display.classList.add('hide');
   displayTwo.classList.add('show');
@@ -33,3 +33,19 @@ btn.addEventListener('click', function(event) {
 
   text.value = '';
 });
+
+var homework = document.getElementsByClassName('brother-two')[0];
+homework.addEventListener('click', function(event) {
+  var textArea = document.getElementsByClassName('display-two')[0].children[3];
+  var btn = document.getElementsByClassName('display-two')[0].children[4];
+  var img = document.getElementsByClassName('display-two')[0].children[5];
+  homework.classList.add('hide');
+  textArea.classList.remove('hide');
+  textArea.classList.add('show');
+  btn.classList.remove('hide');
+  btn.classList.add('show');
+  img.classList.remove('hide');
+  img.classList.add('show');
+  displayTwo.style.transform = 'translateY(5%)';
+  display.style.transform = 'translateY(-80%)';
+})

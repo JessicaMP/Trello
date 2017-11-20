@@ -215,7 +215,7 @@ section {
   height: 34px;
 }
 
-.display button {
+.btn {
   background: #6b4;
   border: none;
   color: white;
@@ -230,7 +230,7 @@ section {
   cursor: pointer;
 }
 
-.display img {
+.x {
   width: 25px;
   display: inline-block;
   transform: translateY(30%);
@@ -243,32 +243,33 @@ section {
   margin: 0px 0px 0px 10px;
   width:270px;
   display: inline-block;
-  height: 68px;
+  height: auto;
+  padding: 8px 10px;
   transform: translateY(-10%);
+  box-sizing: border-box;
 }
 
 .display-two p {
   height: 34px;
-  padding: 8px 10px;
   box-sizing: border-box;
   font-size: 14px;
 }
 .sister {
   font-weight: 700;
-  width: 240px;
+  width: 210px;
   display: inline-block;
   color: #333;
 }
 
 .brother-one {
   display: inline-block;
-  width: 30px;
   cursor: pointer;
   color: #838c91;
+  margin-left: 24px
 }
 
 .brother-two {
-  width:270px;
+  width: auto;
   display: block;
   cursor: pointer;
   color: #838c91;
@@ -278,6 +279,17 @@ section {
   background-color: #C4C9CC;
   text-decoration: underline;
   color: #4d4d4d;
+}
+
+.display-two textarea {
+  width: 254px;
+  height: 66px;
+  border: none;
+  outline: none;
+}
+
+textarea.btn {
+  margin-left: 7px;
 }
 
 .hide {
