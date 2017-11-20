@@ -54,19 +54,25 @@
           </li>
         </ul>
       </nav>
+      <div class="display-two hide">
+        <p class="brother-one">...</p>
+        <p class="brother-two">Añadir una tarea...</p>
+      </div>
       <div class="list">
         <form class="" action="index.html" method="post">
           <input id="list-in" type="text" name="list-input" value="" placeholder="Añadir una lista..." disabled= 'true'>
         </form>
       </div>
-      <div class="display hide" >
+
+      <div class="display hide">
         <form class="" action="index.html" method="post">
-          <input type="text" name="display-input" value="" placeholder="Añadir una lista...">
-          <button type="button" name="button">Guardar</button>
+          <input id="text" type="text" name="display-input" value="" placeholder="Añadir una lista...">
+          <button id="btn" type="button" name="button">Guardar</button>
           <!--<i class="fa fa-times" aria-hidden="true"></i>-->
           <img id="close" src="assets/images/close.png" alt="close">
         </form>
       </div>
+
     </section>
     <script type="text/javascript" src="js/app.js"></script>
   </body>

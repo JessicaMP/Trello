@@ -190,7 +190,7 @@ section {
 }
 /* Formulario de lista*/
 .display {
-  display:  block;
+  display: inline-block;
   margin-left: 10px;
   border-radius: 3px;
   padding: 4px;
@@ -227,6 +227,7 @@ section {
   box-sizing: border-box;
   margin-bottom: 4px;
   margin-right: 5px;
+  cursor: pointer;
 }
 
 .display img {
@@ -234,6 +235,49 @@ section {
   display: inline-block;
   transform: translateY(30%);
   cursor: pointer;
+}
+
+.display-two {
+  background: #E2E4E6;
+  border-radius: 3px;
+  margin: 0px 0px 0px 10px;
+  width:270px;
+  display: inline-block;
+  height: 68px;
+  transform: translateY(-10%);
+}
+
+.display-two p {
+  height: 34px;
+  padding: 8px 10px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.sister {
+  font-weight: 700;
+  width: 240px;
+  display: inline-block;
+  color: #333;
+}
+
+.brother-one {
+  display: inline-block;
+  width: 30px;
+  cursor: pointer;
+  color: #838c91;
+}
+
+.brother-two {
+  width:270px;
+  display: block;
+  cursor: pointer;
+  color: #838c91;
+}
+
+.brother-two:hover, .brother-one:hover{
+  background-color: #C4C9CC;
+  text-decoration: underline;
+  color: #4d4d4d;
 }
 
 .hide {
