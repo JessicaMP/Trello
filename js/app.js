@@ -33,14 +33,15 @@ button.addEventListener('click', function(event) {
 
   text.value = '';
 });
-
+//A hacer click en añadir tarea te despliega el textarea
 var homework = document.getElementsByClassName('brother-two')[0];
+var textArea = document.getElementsByClassName('display-two')[0].children[3].focus();
 homework.addEventListener('click', function(event) {
   var textArea = document.getElementsByClassName('display-two')[0].children[3];
   var btn = document.getElementsByClassName('display-two')[0].children[4];
   var img = document.getElementsByClassName('display-two')[0].children[5];
   homework.classList.add('hide');
-  textArea.classList.remove('hide');
+  //textArea.classList.remove('hide');
   textArea.classList.add('show');
   btn.classList.remove('hide');
   btn.classList.add('show');
@@ -48,4 +49,18 @@ homework.addEventListener('click', function(event) {
   img.classList.add('show');
   displayTwo.style.transform = 'translateY(5%)';
   display.style.transform = 'translateY(-80%)';
+})
+//Al darle clik en enviar tu nueva tarea se agrega despues del titulo de la lista
+var save = document.getElementById('save');
+var info = document.getElementById('info');
+save.addEventListener('click', function(event) {
+  var child = document.getElementsByClassName('display-two')[0].children[1];
+  var miniCont = document.createElement('p');
+  miniCont.textContent = info.value;
+  miniCont.classList.add('sister');
+  miniCont.classList.add('sister-two');
+  var displayTwo = document.getElementsByClassName('display-two')[0];
+  displayTwo.insertBefore(miniCont, info);
+
+  info.value = '';
 })

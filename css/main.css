@@ -292,6 +292,17 @@ textarea.btn {
   margin-left: 7px;
 }
 
+.sister-two {
+  background-color: white;
+  width: 254px;
+  height: 32px;
+  padding: 6px 6px 2px 8px;
+  cursor: pointer;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
 .hide {
   display: none;
 }
