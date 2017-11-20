@@ -25,10 +25,15 @@ header li {
   height: 30px;
 }
 
+.li-one:hover, .li-two:hover, .li-fourth:hover, .li-five:hover, .li-six:hover {
+  background: rgba(255,255,255,.2);
+}
+
 .li-one, .li-two, .li-fourth, .li-five, .li-six {
   background-color: rgba(255,255,255,.3);
   color: rgba(255,255,255,.5);
   transform: translateY(-10%);
+  cursor: pointer;
 }
 
 .li-one p {
@@ -79,11 +84,21 @@ header li {
 .li-3 img {
   display: inline-block;
   color: #80b4d3;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  margin-right: 130px;
+  cursor: pointer;
+}
+
+.li-3 img:hover {
+  opacity: 1.0;
+  filter: alpha(opacity=100);
 }
 
 .li-fourth, .li-five, .li-six, .li-seven {
   width: 30px;
   margin-right: 3px;
+  cursor: pointer;
 }
 
 .fa-info {
@@ -117,6 +132,14 @@ section {
   font-size: 20px;
   margin-left: 10px;
   margin-right: 10px;
+}
+
+.sub-li1, .sub-li2, .sub-li3 {
+  cursor: pointer;
+}
+
+.sub-li1:hover, .sub-li2:hover/*, .sub-li3:hover*/ {
+  background: #08c;
 }
 
 .fa-star-o {
@@ -172,6 +195,10 @@ section {
   background: #07a;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.list:hover {
+  background: #46a;
 }
 
 .list input {
